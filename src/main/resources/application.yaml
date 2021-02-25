@@ -1,0 +1,30 @@
+#redis mysql 配置
+spring:
+  redis:
+    host: 192.168.1.110
+    port: 6379
+    database: 0
+  datasource:
+    url: jdbc:mysql://192.168.1.200:3306/mysql_data?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=Hongkong&allowPublicKeyRetrieval=true
+    username: root
+    password: HYLLB10738
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: level
+
+
+server:
+  port: 8081
+logging:
+  level:
+    root:
+      warn
+    com.huyanlong.redis.mapper:
+      trace
+  pattern:
+    console: '%p%m%n'
+
+# springBoot整合mybatis-plus关闭自动转换小驼峰命名规则
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false

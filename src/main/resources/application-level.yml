@@ -1,0 +1,57 @@
+leveltemp:
+  allLevel:
+    L1:
+      - name: '编程告警清零'
+        alias: 'program'
+        drop: false
+      - name: '编程选项清零'
+        alias: program-options-clear
+        drop: false
+      - name: '冗余代码清零'
+        alias: redundancy-code-clear
+        drop: false
+      - name: '静态告警清零'
+        alias: static-alarm-clear
+        drop: false
+      - name: '安全规范清零'
+        alias: security-specification-clear
+        drop: false
+      - name: '危险函数清零'
+        alias: danger-function-clear
+        drop: false
+      - name: '安全变规则项清零'
+        alias: security-rule-clear
+        drop: false
+    L2:
+      - name: '代码重复率'
+        alias: code-repetition-rate
+        drop: false
+      - name: '文件重复率'
+        alias: file-repetition-rate
+        drop: false
+      - name: '平均文件代码行<=300'
+        alias: file-code-row
+        drop: false
+      - name: '简洁'
+        alias: concise
+        drop: true
+      - name: '高效'
+        alias: efficient
+        drop: true
+    L3:
+      - name: '暂定1'
+        alias: type1
+        drop: true
+      - name: '暂定2'
+        alias: type2
+        drop: true
+    L4:
+      - name: '目前暂定1'
+        alias: mqiantype1
+        drop: true
+      - name: '目前暂定2'
+        alias: mqiantype2
+        drop: true
+      - name: '目前暂定3'
+        alias: mqiantype3
+        drop: true
