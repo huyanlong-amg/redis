@@ -12,9 +12,10 @@ import java.util.Map;
 public class RedisUtil {
 
     public static Map<String, Object> getDataTable(IPage<?> pageInfo) {
-        Map<String, Object> data = new HashMap<>(2,1);
+        Map<String, Object> data = new HashMap<>(2, 1);
         data.put("rows", pageInfo.getRecords());
         data.put("total", pageInfo.getTotal());
+        data.put("page", pageInfo.getPages());
         return data;
     }
 }

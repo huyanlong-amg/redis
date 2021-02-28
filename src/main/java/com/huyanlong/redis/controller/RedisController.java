@@ -26,6 +26,6 @@ public class RedisController {
 
     @GetMapping("/getRedisData")
     public WebResponce queryRedisData(@RequestParam String key) {
-        return  redisServer.queryRedisData(key);
+        return redisServer.queryRedisData(key);
     }
 }

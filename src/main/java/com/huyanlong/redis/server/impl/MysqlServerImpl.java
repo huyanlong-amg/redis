@@ -11,7 +11,6 @@ import com.huyanlong.redis.responce.WebResponce;
 import com.huyanlong.redis.server.MysqlServer;
 import com.huyanlong.redis.util.RedisUtil;
 import com.huyanlong.redis.util.WebResponceUtil;
-import io.lettuce.core.cluster.RedisClusterURIUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
